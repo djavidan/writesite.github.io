@@ -1,0 +1,311 @@
+#top_menu {
+    margin:auto;
+    overflow:hidden;
+    border: 1px solid aqua;
+    background-color: royalblue;
+    height:55px;
+    width: 942px;
+    border-top-left-radius:25px;
+    border-top-right-radius:25px;
+    top:0;
+    display: block;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color:#ffdab6;
+    }
+#top_menu li{
+    background-color:inherit;
+    float:left;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    padding: 15px 20px;
+    transition:0.3s;
+    list-style-type: none; /* Убираем маркеры */
+    font-size: 20px;
+    font-family: Arial, Helvetica;
+    }
+#top_menu a:hover {
+     color:#fff;
+    }
+#top_menu a:hover span{
+    display:block;
+    cursor:pointer;
+}
+.logo{
+display: block;
+text-align: center;
+cursor: pointer;
+margin: auto;
+margin-right: 650px;
+margin-top: 10px;
+    }
+.phone {
+    color: blue;
+    font-size: 1.6em;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin:auto;
+    margin-top: -50px;
+    margin-left: 650px;
+}
+
+h1{
+    margin:auto;
+    color:black;
+    text-align: center;
+    margin-left: -270px;
+    }
+body {
+     font-family: Arial;
+     margin: 0;
+     background:url('images/Youngs+Road+IV.jpg')fixed;
+     background-size:cover;
+    }
+     
+            
+
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Position the image container (needed to position the left and right arrows) */
+        .container {
+            position:relative;
+            }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+            cursor: pointer;
+        }
+
+        /* Next & previous buttons */
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin: auto;
+  
+}
+.next {
+  cursor: pointer;
+  position:absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+}
+/* Position the "next button" to the right */
+        .next {
+            right:1px;
+            border-radius: 3px 0 0 3px;
+        }
+/* Position the "next button" to the right */
+        .prev {
+            left: 0px;
+            border-radius: 3px 0 0 3px;
+        }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+                background-color: blue;
+            }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* Container for image text */
+        .caption-container {
+            text-align: center;
+            background-color: #ff6a00;
+            width:942px;
+            margin:auto;
+            padding: 2px 16px;
+            color: white;
+            top: auto;
+            margin-top: -15px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Six columns side by side */
+        .column {
+            float: left;
+            width: 16.66%;
+        }
+
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+            opacity: 0.6;
+        }
+
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+             .container {
+                position: relative;
+                margin:auto;
+                width:942px;
+                margin-top: -16px;
+            }
+            .row{
+                margin:auto;
+                border-bottom: 1px solid royalblue;
+                border-bottom-width: 30px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                width:940px;
+                
+            }
+            .dot{
+                cursor:pointer;
+                position:relative;
+                top:-30px;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #808080;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+                
+}
+.active, .dot:hover {
+  background-color: #FF0000;
+}
+/* Fading animation */
+.mySlides {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ .outline {
+            word-spacing: 20px;
+            width: 950px;
+            margin:auto;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: #000000;
+            border-bottom: 10px solid aqua;
+            border-bottom-width: 15px;
+            border-bottom-color: royalblue;
+        }
+ .float-right {
+            
+     float: right;
+            margin:auto;
+     margin-right: 220px;
+        }
+  
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 960px) {
+  body{
+    margin:auto;
+  }
+    
+    .logo{
+    margin: auto;
+    float: left;
+    }
+    .phone{
+        margin: auto;
+        float: right;
+    }
+    #top_menu{
+      text-align: center;
+      padding:inherit;
+      background-color:black;
+        margin: auto;
+      }
+.container{
+  text-align:center;
+margin:auto;
+   }
+.caption-container{
+text-align: left;
+  background-color:green;
+    margin: auto;
+}
+.row{
+                display: none;
+}
+.prev {
+	display: none;
+}
+    .next {
+	display:none;
+}
+.outline{
+  margin: auto;
+  width:auto;
+  font-size:initial
+      }
+h1{
+  margin: auto;
+}
+.float-right{
+  margin:auto;
+  width:auto;
+}
+  }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 1460px) {
+.float-right{
+  margin:auto;
+  float: right;
+    margin-right: 480px;
+    
+

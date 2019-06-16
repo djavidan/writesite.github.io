@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+    <title>Туристическое агентство ТурБюро</title>
+    <meta name="description" content="Описание страницы" />
+    <meta name="keywords" content="Ключевые слова" />
+    <link rel="stylesheet" href="StyleSheet.css" />
+    
+</head>
+<body>
+   <header>
+        <a href="Index.html" title="Туристическое агентство ТурБюро" class="logo"><img src="images/logo.png" alt="Туристическое агентство" /></a>
+        <div class="phone">+7 (912) 644-42-57</div>
+        <div class="logo"></div>
+        <br><nav>
+            <div id="tabs">
+                 <ul id="top_menu">
+                    <li><a href="services.html">О компании</a></li>
+                    <li><a href="HtmlPage.html">Наши услуги</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+               </div>
+        </nav>
+
+        <br /><div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="images2/img_5terre_wide.jpg" width="940" height="410" alt="The Woods">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="images2/img_mountains_wide.jpg" width="940" height="410" alt="Cinque Terre">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="images2/img_lights_wide.jpg" width="940" height="410" alt="Mountains and fjords">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="images2/img_nature_wide.jpg" width="940" height="410" alt="Northern Lights">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="images2/img_snow_wide.jpg" width="940" height="410" alt="Nature and sunrise">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="images2/header_img.jpg" width="940" height="410" alt="Snowy Mountains">
+            </div>
+       <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+       
+       <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+      
+       
+       <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="images2/img_5terre_wide.jpg"  style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images2/img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images2/img_lights_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images2/img_nature_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images2/img_snow_wide.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images2/header_img.jpg" width="940" height="52" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+            </div>
+        </div>
+    <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dot = document.getElementsByClassName("dot");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dot[i].className = dot[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                dot[slideIndex - 1].className += " active";
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+        </script>
+     
+    </header>
+   <h1>Приветствуем Вас на сайте ТурБюро!</h1>
+    <img src="images/content_img.jpg" alt="Картинка" class="float-right" />
+    <div class="outline">
+        <p>Здравствуйте! Мы рады приветствовать вас на сайте туристического агентства «ТурБюро»! Мы предлагаем нашим клиентам только самые интересные и захватывающие приключенческие туры по всему миру!</p>
+        <p>Только у нас вы сможете полететь в Индию на самолете и окунуться в глубокое синее море, держась за плавник акулы. Но не волнуйтесь - каждый клиент нашего агентства застрахован по полной программе и жаждет приключений снова и снова!</p>
+        <p>Если вам нечего заняться, вы поистине решили заняться приключениями на свою голову, то приглашаем вас в офисы нашей компании по всей стране для выбора самых вкусных предложений.</p>
+    </div>
+</body>
+</html>

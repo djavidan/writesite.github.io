@@ -1,0 +1,140 @@
+#top_menu {
+    margin:auto;
+    overflow:hidden;
+    border: 1px solid aqua;
+    background-color: royalblue;
+    height:55px;
+    width: 900px;
+    border-top-left-radius:25px;
+    border-top-right-radius:25px;
+    display: block;
+    text-align: center;
+   }
+a{
+    text-decoration: none;
+    color:#ffdab6;
+    }
+#top_menu li{
+    background-color:inherit;
+    float:left;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    padding: 15px 20px;
+    transition:0.3s;
+    list-style-type: none; /* Убираем маркеры */
+    font-size: 20px;
+    font-family: Arial, Helvetica;
+    }
+#top_menu a:hover {
+     color:#fff;
+    }
+#top_menu a:hover span{
+    display:block;
+    cursor:pointer;
+}
+.logo{
+display: block;
+text-align: center;
+cursor: pointer;
+margin: auto;
+margin-right: 650px;
+margin-top: 10px;
+   }
+.phone {
+     color: blue;
+    font-size: 1.6em;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin:auto;
+    margin-top: -50px;
+    margin-left: 650px;
+}
+
+h1{
+     margin:auto;
+    color:black;
+    text-align: center;
+    margin-left: -270px;
+   }
+body{
+     background: url('images/Orient+Point+IV.jpg')fixed;
+     background-size: cover;
+}
+.outline {
+            word-spacing: 20px;
+            width: 950px;
+            margin:auto;
+            display: block;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 700;
+            font-size: 20px;
+            color:#000000;
+            border-bottom: 10px solid aqua;
+            border-bottom-width: 15px;
+            border-bottom-color: royalblue;
+        }
+.header_img {
+                margin:auto;
+                margin-top: -15px;
+                display: block;
+                text-align: center;
+                border-bottom: 1px solid royalblue;
+                border-bottom-width: 30px;
+                border-bottom-left-radius: 25px;
+                border-bottom-right-radius: 25px;
+                width: 940px;
+              }
+.float-right{
+  float: right;
+    margin: auto;
+    margin-right: 220px;
+ }
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 960px) {
+    body{
+    margin:auto;
+  }
+    .logo{
+        float:left;
+        margin:auto;
+        }
+    .phone{
+        margin:auto;
+        float:right;
+        color:coral;
+    }
+    #top_menu{
+        margin:auto;
+        text-align:center;
+        background-color:forestgreen;
+    }
+    .header_img{
+        margin:auto;
+        text-align:center;
+        border-bottom-width:inherit;
+        
+    }
+
+ .outline{
+  margin: auto;
+  text-align:center;
+  font-size:initial
+      }
+h1{
+  margin: auto;
+  text-align:center;
+}
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 1460px) {
+.float-right{
+  margin:auto;
+  float: right;
+    margin-right: 480px;
+    
+    }
+}
